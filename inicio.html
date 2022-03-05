@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Formulario </title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h2>Pagina de Formulario</h2>
+
+    <form action="pagina/login.html" method="GET">
+
+        <fieldset>
+
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome Completo:* </label>
+                <input type="text" name="nome" id="nome" required minlength="2" maxlength="10"/>
+
+            <br>
+
+            <label for="email">Email:* </label>
+                <input type="email" name="email" id="email" required pattern="(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9_.+-]+\.[a-zA-Z0-9_.]+$)" title="Endereço de email"/>
+
+            <br>
+
+            <label> Cel:</label>
+                <input type="number" name="cel" />
+
+            <label> Observação:</label>
+            <textarea name="descricao" >Digite aqui sua descrição</textarea>
+            
+
+        </fieldset>
+        <fieldset>
+            <legend>Dados de Pagamento</legend>
+
+
+            <label>
+                <select name="tipo">
+                    <option value="">Opções</option>
+                    <option value="C">Credito</option>
+                    <option value="D">Debito</option>
+                </select>
+            </label>
+
+            <label for="card">Numero do Cartao </label>
+                <input type="number" name="card" id="card" />
+
+            <br>
+
+            <label for="date">Mes/Ano: </label>
+                <input type="month" name="date" id="date" required min="2022-02" max="2022-06"/>
+
+            <br>
+
+            <label> Codigo de Segurança:</label>
+                <input type="number" name="cod" required max="999" step="5"/>
+            
+        </fieldset>
+        <label for="check">
+        <input type="checkbox" id="check" />
+        Eu declaro que li e aceito todos os termos concordando que o <a href="https://www.google.com.br">FLAMENGO é o melhor time do MUNDO!</a></label>
+        <br>
+        <br>
+        
+        <button>Enviar</button>
+
+    </form>
+
+</body>
+
+</html>

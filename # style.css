@@ -1,0 +1,38 @@
+.secundario, #titulo, h6 {
+    color: green;
+    font-size: 20px;
+}
+h1 {
+    color: red; 
+    font-size: 10px;
+}
+
+a{
+    font-size: 8px;
+    color: salmon;
+}
+
+ol li {
+    font-size: 12px;
+    font-weight: bold;
+    color: yellowgreen;
+}
+ol p {
+    font-size: 12px;
+    font-weight: bold;
+    color: red;
+}
+
+ul li {
+    font-size: 12px;
+    font-weight: bold;
+    color: red;
+}
+
+img {
+    width: 50px;
+}
+
+button {
+    width: 150px;
+}

@@ -1,0 +1,17 @@
+.secundario, #titulo, h6 {
+    color: green;
+    font-size: 600px;
+}
+
+/* img{
+    width: 600px;
+    height: 200px;
+    /* object-fit: scale-down; */
+    /* object-fit: contain; */
+    /* object-fit: fill; */
+    /* object-fit: none; */
+    /* object-fit: cover; */
+
+    
+
+ 
