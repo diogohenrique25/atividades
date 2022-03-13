@@ -12,60 +12,78 @@
 
     <form action="pagina/login.html" method="GET">
 
+        <!-- <input type="text" name="nomeCompleto" value="Insira o nome completo" /> -->
+        <!-- <input type="email" name="email"/> -->
+        <!-- <input type="color" name="color"/> -->
+        <!-- <input type="date" name="date"/> -->
+        <!-- <input type="datetime-local" name="datetime"/> -->
+        <!-- <input type="month" name="month"/> -->
+        <!-- <input type="number" name="number"/> -->
+        <!-- <input type="range" name="range"/> -->
+        <!-- <input type="search" name="search"/> -->
+        <!-- <input type="tel" name="tel"/> -->
+        <!-- <input type="time" name="time"/> -->
+        <!-- <input type="url" name="url"/> -->
+        <!-- <input type="week" name="week"/> -->
+
+        <!-- <textarea name="descricao"></textarea> -->
+
+        <!-- <select name="Estado" size="4" multiple>
+            <option value=""> Selecione </option>
+            <option value="AC"> Acre </option>
+            <option value="DF"> Distrito Federal </option>
+            <option value="GO"> Goias </option>
+            <option value="MG" selected> Minas Gerais </option>
+        </select> -->
+
+        <!-- <button>Texto que vai no botao</button> -->
+
+        <!-- <input type="hidden" name="country" value="BR"/> -->
+        <!-- <input type="hidden" name="id" value=""/> -->
+
+        <!-- Sempre via method POST + enctype -->
+        <!-- <input type="file" name="photo" accept="image/*"/> -->
+        <!-- <input type="file" name="photo" accept="application/pdf"/> -->
+
         <fieldset>
-
             <legend>Dados Pessoais</legend>
-            <label for="nome">Nome Completo:* </label>
-                <input type="text" name="nome" id="nome" required minlength="2" maxlength="10"/>
+            <label for="nome">Nome Completo: </label>
+            <input type="text" name="nome" id="nome" />
 
             <br>
 
-            <label for="email">Email:* </label>
-                <input type="email" name="email" id="email" required pattern="(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9_.+-]+\.[a-zA-Z0-9_.]+$)" title="Endereço de email"/>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" />
 
             <br>
 
-            <label> Cel:</label>
-                <input type="number" name="cel" />
-
-            <label> Observação:</label>
-            <textarea name="descricao" >Digite aqui sua descrição</textarea>
-            
+            <label> Cel:
+                <input type="text" name="cel" />
+            </label>
 
         </fieldset>
         <fieldset>
             <legend>Dados de Pagamento</legend>
-
-
-            <label>
-                <select name="tipo">
-                    <option value="">Opções</option>
-                    <option value="C">Credito</option>
-                    <option value="D">Debito</option>
-                </select>
-            </label>
-
             <label for="card">Numero do Cartao </label>
-                <input type="number" name="card" id="card" />
+            <input type="text" name="card" id="card" />
 
             <br>
 
             <label for="date">Mes/Ano: </label>
-                <input type="month" name="date" id="date" required min="2022-02" max="2022-06"/>
+            <input type="month" name="date" id="date" />
 
             <br>
 
-            <label> Codigo de Segurança:</label>
-                <input type="number" name="cod" required max="999" step="5"/>
-            
+            <label> Codigo de Segurança:
+                <input type="number" name="cod" />
+            </label>
         </fieldset>
-        <label for="check">
-        <input type="checkbox" id="check" />
-        Eu declaro que li e aceito todos os termos concordando que o <a href="https://www.google.com.br">FLAMENGO é o melhor time do MUNDO!</a></label>
-        <br>
-        <br>
+
+        <!-- <input type="checkbox" id="check"/>
+        <label for="check">Eu declaro que li e aceito todos os termos concordando que o FLAMENGO é o melhor time do MUNDO!</label> -->
+
         
-        <button>Enviar</button>
+        <input type="submit" />
 
     </form>
 
